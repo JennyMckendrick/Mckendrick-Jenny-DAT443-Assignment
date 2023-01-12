@@ -25,19 +25,19 @@ function changeBackground(event) {
     }
 
     if(event.target.classList.contains("bg-blue")){
-        event.target.classList.add("bg-black");
+        event.target.classList.add("bg-white");
         event.target.classList.remove("bg-blue");
         return;
     }
 
-    if(event.target.classList.contains("bg-black")){
-        event.target.classList.add("bg-white");
-        event.target.classList.remove("bg-black");
+    if(event.target.classList.contains("bg-white")){
+        event.target.classList.add("bg-black");
+        event.target.classList.remove("bg-white");
         return;
     }
 
     event.target.classList.add("bg-yellow");
-    event.target.classList.remove("bg-white");
+    event.target.classList.remove("bg-black");
     //classList.contains = tells if a class is prensent in a list of classes.
 }
 
@@ -138,7 +138,6 @@ function setup(){
     //Saying the total I want
     let elementCurrent = 0;
     //Saying how many I would like it to start with.
-    
 
     while(elementCurrent < elementsTotal) {
         const copy = elementInputButton.cloneNode(); 
