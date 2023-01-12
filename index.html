@@ -1,0 +1,44 @@
+<html> 
+    <head> 
+        <link href="style.css" rel="stylesheet"/> 
+        <script src="main.js"> </script>
+    </head>
+    <body> 
+        <div class="box" id = "inputbox">
+            <button class="bg-random button" onclick="changeBackground(event)" id = "inputbutton">  </button>
+            
+            
+            
+            
+        <!-- event - anythig that happens, such as moving mouse or clicking. -->
+        </div>
+        <!--- div wraps around HTML tags, often used to define a section or to divide up HTML code-->
+        
+        <center>
+        <p class="large" id="outputtext">
+        </p>
+        <button onclick="checkTiles()">
+            check
+        </button>
+        <button onclick="Refresh()">
+            Play again
+        </button>
+        <script>
+            function Refresh(){
+                  window.location.reload("Refresh")
+                }
+          </script>
+          <p> 
+            Böhnke, Sebastian, "Playing in color", from Pixabay, 2022, 
+            https://pixabay.com/music/beautiful-plays-playing-in-color-120336/
+            </p>
+            <audio id="Song1">
+                <source src="Song1.mp3"
+            </audio>
+            <script>
+                window.addEventListener('click', ()=>{
+                document.getElementById("Song1").play();
+                });
+            </script>
+    </body>
+</html>
