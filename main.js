@@ -162,6 +162,12 @@ function setup(){
 
 }
 
+function Mute(){
+    var elements = document.getElementsByTagName('audio');
+    for(var e = 0; e < elements.length; elements[e].muted = !elements[e].muted, e++);
+    //I used the material from num8er on stackoverflow, to help me with the muteing
+    //aspect of this code.
+}
 
 
 
